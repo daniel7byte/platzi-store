@@ -5,9 +5,10 @@ import { AppService } from './app.service';
 import { ProductsController } from './controllers/products.controller';
 import { HealthController } from './health/health.controller';
 import { BrandsModule } from './brands/brands.module';
+import { BranchOfficeModule } from './branch-office/branch-office.module';
 
 @Module({
-  imports: [TerminusModule, BrandsModule],
+  imports: [TerminusModule, BrandsModule, BranchOfficeModule],
   controllers: [AppController, ProductsController, HealthController],
   providers: [AppService],
 })
